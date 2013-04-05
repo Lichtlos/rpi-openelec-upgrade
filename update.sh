@@ -4,7 +4,7 @@
 cd /storage
 
 # location of the nightlies
-url="http://openelec.thestateofme.com/"
+url="http://openelec.thestateofme.com/dev_builds/"
 
 # get base, revision and filename of last build
 last_base=`curl -s $url | grep .tar.bz2 | sed 's/.*\(OpenELEC-RPi.*\).tar.bz2.*/\1/' | sort | tail -1`
